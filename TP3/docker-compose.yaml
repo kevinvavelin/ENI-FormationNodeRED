@@ -1,0 +1,24 @@
+version: "1.0"
+services:
+    node-red:
+      build:
+      image: kevinvavelin/noderedcustom
+      restart:
+      environment:
+        - 
+        -
+        -
+      ports:
+        - 8000:8000
+      networks:
+        - node-red-networks
+    
+    schneider-admin:
+      build:
+      image: 
+      restart:
+      environment:
+      
+
+networks:
+  node-red-networks

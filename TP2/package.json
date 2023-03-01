@@ -1,0 +1,10 @@
+{
+  "name": "tp2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Codetics",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
