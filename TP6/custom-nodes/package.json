@@ -1,0 +1,9 @@
+{
+  "name": "user-nodes",
+  "version": "1.0.0",
+  "node-red": {
+    "nodes": {
+      "user": "user.js"
+    }
+  }
+}

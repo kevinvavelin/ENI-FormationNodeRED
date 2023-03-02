@@ -419,6 +419,7 @@
     "user-nodes": {
         "name": "user-nodes",
         "version": "1.0.0",
+        "enabled":true,
         "local": false,
         "user": false,
         "nodes": {

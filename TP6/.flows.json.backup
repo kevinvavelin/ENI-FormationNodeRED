@@ -95,7 +95,7 @@
         "id": "96035383ab2cadea",
         "type": "user",
         "z": "7f739debaab51450",
-        "name": "Toto",
+        "name": "Mon utilisateur",
         "x": 330,
         "y": 380,
         "wires": [

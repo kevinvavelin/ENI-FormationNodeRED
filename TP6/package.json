@@ -5,6 +5,7 @@
   "author": "Codetics",
   "dependencies": {
     "express": "^4.18.2",
-    "node-red": "^3.0.2"
+    "node-red": "^3.0.2",
+    "user-nodes": "file:custom-nodes"
   }
 }
