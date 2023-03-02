@@ -1,5 +1,6 @@
 const http = require("http");
 const express = require("express");
+const bodyParser = require("body-parser");
 const RED = require("node-red");
 const fs = require("fs");
 const path = require("path");
@@ -28,6 +29,7 @@ const settings = {
 RED.init(server, settings);
 
 app.use(express.json());
+app.use(express.static("frontend/build"));
 
 app.use(settings.httpAdminRoot, RED.httpAdmin);
 app.use(settings.httpNodeRoot, RED.httpNode);
@@ -49,6 +51,10 @@ app.use('/getFlow', function(req, res, next){
 });
 app.get("/getFlow", function(request, response, next) {
     response.send();
+});
+
+app.get("/", function(request, response) {
+    response.sendFile(path.join(__dirname, "frontend/build", "index.html"))
 });
 
 server.listen(8000);

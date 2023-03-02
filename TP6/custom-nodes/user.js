@@ -1,10 +1,10 @@
 module.exports = function(RED) {
 
     function SayHelloUser(config) {
-        RED.nodes.createNode(this.config);
+        RED.nodes.createNode(this,config);
         var node = this;
         node.on("input", function(msg) {
-            msg.payload = msg.payload.toLowerCase();
+            msg.payload = "Hello " + msg.payload.name;
             node.send(msg);
         });
     }
