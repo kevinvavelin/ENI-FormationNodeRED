@@ -1,11 +1,10 @@
 {
   "name": "tp6",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "author": "Codetics",
   "dependencies": {
     "express": "^4.18.2",
-    "node-red": "^3.0.2",
-    "user-nodes": "file:custom-nodes"
+    "node-red": "^3.0.2"
   }
 }

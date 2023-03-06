@@ -415,24 +415,5 @@
                 "file": "C:\\Users\\KevinVavelin\\Documents\\Project\\Client\\Formation NodeRED\\ENI-FormationNodeRED-Code\\TP6\\node_modules\\@node-red\\nodes\\core\\storage\\23-watch.js"
             }
         }
-    },
-    "user-nodes": {
-        "name": "user-nodes",
-        "version": "1.0.0",
-        "local": false,
-        "user": false,
-        "nodes": {
-            "user": {
-                "name": "user",
-                "types": [
-                    "user"
-                ],
-                "enabled": true,
-                "local": false,
-                "user": false,
-                "module": "user-nodes",
-                "file": "C:\\Users\\KevinVavelin\\Documents\\Project\\Client\\Formation NodeRED\\ENI-FormationNodeRED-Code\\TP6\\node_modules\\user-nodes\\user.js"
-            }
-        }
     }
 }
