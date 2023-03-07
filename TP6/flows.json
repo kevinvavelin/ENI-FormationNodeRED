@@ -1,0 +1,70 @@
+[
+    {
+        "id": "656ae7a7e08e51cd",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f592ca770df95f4c",
+        "type": "websocket-listener",
+        "path": "/ws/updateData",
+        "wholemsg": "false"
+    },
+    {
+        "id": "7e8283652991ed42",
+        "type": "websocket-client",
+        "path": "ws/dataUpdated",
+        "tls": "",
+        "wholemsg": "true",
+        "hb": "0",
+        "subprotocol": ""
+    },
+    {
+        "id": "efcbc83a772fc7c2",
+        "type": "websocket in",
+        "z": "656ae7a7e08e51cd",
+        "name": "",
+        "server": "f592ca770df95f4c",
+        "client": "",
+        "x": 200,
+        "y": 260,
+        "wires": [
+            [
+                "e35dda68c112c22a"
+            ]
+        ]
+    },
+    {
+        "id": "ef053e857a7b97a3",
+        "type": "websocket out",
+        "z": "656ae7a7e08e51cd",
+        "name": "",
+        "server": "",
+        "client": "7e8283652991ed42",
+        "x": 700,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "e35dda68c112c22a",
+        "type": "function",
+        "z": "656ae7a7e08e51cd",
+        "name": "Return the content of websocket",
+        "func": "\nreturn {payload: msg.payload};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 180,
+        "wires": [
+            [
+                "ef053e857a7b97a3"
+            ]
+        ]
+    }
+]

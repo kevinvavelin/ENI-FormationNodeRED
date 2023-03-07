@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "server.js",
   "author": "Codetics",
+  "scripts": {
+    "start": "cd ./frontend && npm run build && cd .. && node server.js"
+  },
   "dependencies": {
     "express": "^4.18.2",
     "node-red": "^3.0.2"
